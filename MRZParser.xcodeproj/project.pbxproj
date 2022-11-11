@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		16B245AA291AB2D10013F227 /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16B245A9291AB2D10013F227 /* String+Extensions.swift */; };
+		16D8BC19291E5F3500041D41 /* MRZFieldFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16D8BC18291E5F3500041D41 /* MRZFieldFormatter.swift */; };
+		16D8BC1B291ED51E00041D41 /* MRZFieldType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16D8BC1A291ED51E00041D41 /* MRZFieldType.swift */; };
+		16D8BC1D291ED55D00041D41 /* MRZField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16D8BC1C291ED55D00041D41 /* MRZField.swift */; };
 		60B81EDE21C29AD800587DA5 /* MRZParser.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60B81ED421C29AD800587DA5 /* MRZParser.framework */; };
 		60B81EE321C29AD800587DA5 /* MRZParserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60B81EE221C29AD800587DA5 /* MRZParserTests.swift */; };
 		60B81EE521C29AD800587DA5 /* MRZParser.h in Headers */ = {isa = PBXBuildFile; fileRef = 60B81ED721C29AD800587DA5 /* MRZParser.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -26,6 +30,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		16B245A9291AB2D10013F227 /* String+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
+		16D8BC18291E5F3500041D41 /* MRZFieldFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MRZFieldFormatter.swift; sourceTree = "<group>"; };
+		16D8BC1A291ED51E00041D41 /* MRZFieldType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MRZFieldType.swift; sourceTree = "<group>"; };
+		16D8BC1C291ED55D00041D41 /* MRZField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MRZField.swift; sourceTree = "<group>"; };
 		60B81ED421C29AD800587DA5 /* MRZParser.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MRZParser.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		60B81ED721C29AD800587DA5 /* MRZParser.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MRZParser.h; sourceTree = "<group>"; };
 		60B81ED821C29AD800587DA5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -57,9 +65,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		16B245A8291AB2D10013F227 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				16B245A9291AB2D10013F227 /* String+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		60B81ECA21C29AD800587DA5 = {
 			isa = PBXGroup;
 			children = (
+				16B245A8291AB2D10013F227 /* Extensions */,
 				60B81ED621C29AD800587DA5 /* MRZParser */,
 				60B81EE121C29AD800587DA5 /* MRZParserTests */,
 				60B81ED521C29AD800587DA5 /* Products */,
@@ -78,12 +95,15 @@
 		60B81ED621C29AD800587DA5 /* MRZParser */ = {
 			isa = PBXGroup;
 			children = (
-				60B81EEE21C29B5800587DA5 /* MrzInfo.swift */,
-				9A77510F291A481C009303DE /* ValidationError.swift */,
-				9A775111291A4908009303DE /* Gender.swift */,
 				60B81ED721C29AD800587DA5 /* MRZParser.h */,
 				60B81EF621C2A49600587DA5 /* README.md */,
 				60B81ED821C29AD800587DA5 /* Info.plist */,
+				9A775111291A4908009303DE /* Gender.swift */,
+				16D8BC1C291ED55D00041D41 /* MRZField.swift */,
+				16D8BC18291E5F3500041D41 /* MRZFieldFormatter.swift */,
+				16D8BC1A291ED51E00041D41 /* MRZFieldType.swift */,
+				60B81EEE21C29B5800587DA5 /* MrzInfo.swift */,
+				9A77510F291A481C009303DE /* ValidationError.swift */,
 			);
 			path = MRZParser;
 			sourceTree = "<group>";
@@ -208,9 +228,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				16B245AA291AB2D10013F227 /* String+Extensions.swift in Sources */,
+				16D8BC19291E5F3500041D41 /* MRZFieldFormatter.swift in Sources */,
+				16D8BC1B291ED51E00041D41 /* MRZFieldType.swift in Sources */,
 				9A775112291A4908009303DE /* Gender.swift in Sources */,
 				60B81EEF21C29B5900587DA5 /* MrzInfo.swift in Sources */,
 				9A775110291A481C009303DE /* ValidationError.swift in Sources */,
+				16D8BC1D291ED55D00041D41 /* MRZField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

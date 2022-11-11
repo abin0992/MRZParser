@@ -9,7 +9,7 @@ import XCTest
 @testable import MRZParser
 
 final class MRZParserTests: XCTestCase {
-  private lazy var dateFormatter = {
+    private lazy var dateFormatter: DateFormatter = {
     let dateFormatter = DateFormatter()
     dateFormatter.dateStyle = .short
     dateFormatter.timeZone = TimeZone(identifier: "UTC")
@@ -49,7 +49,10 @@ final class MRZParserTests: XCTestCase {
     XCTAssertEqual(sut.lastNames, ["ERIKSSON"])
     XCTAssertEqual(sut.documentNumber, "D23145890")
     let birthDate = dateFormatter.string(from: sut.birthDate)
-    XCTAssertEqual(birthDate, "12/8/74")
+      // XCTAssertEqual(birthDate, "12/8/74")
+      // dateStyle = .short gives in format MM/dd/yy
+      // therefore correcting the expression
+    XCTAssertEqual(birthDate, "8/12/74")
     XCTAssertEqual(sut.nationality, "NLD")
     XCTAssertEqual(sut.gender, .female)
     XCTAssertTrue(sut.validationErrors.isEmpty)
