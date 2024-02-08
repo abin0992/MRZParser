@@ -1,5 +1,4 @@
 [![YourActionName Actions Status](https://github.com/abin0992/MRZParser/workflows/CI/badge.svg)](https://github.com/abin0992/MRZParser/actions) [![Build Status](https://github.com/abin0992/MRZParser/workflows/CI/badge.svg)](https://github.com/abin0992/MRZParser/actions)
-# Technical assignment for iOS SDK Engineer candidate 
 ## Introduction
 A machine-readable passport (MRP) is a machine-readable travel document (MRTD) with the data on the identity page encoded in optical character recognition format called machine-readable zone (MRZ). More detailed explanation can be found at https://en.wikipedia.org/wiki/Machine-readable_passport or https://pypi.org/project/mrz/.
 
